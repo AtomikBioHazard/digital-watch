@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Watch with JS</title>
+
+    <!-- LINKS -->
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <h1>Digital Watch with JS</h1>
+
+    <main class="wrap">
+      <section class="widget">
+          <div class="date grid-fluid">
+            <p id="weekDay"></p>
+            <p id="month"></p>
+            <p id="day"></p>
+            <p id="year"></p>
+          </div>
+          <div class="watch">
+            <p id="hrs"></p>
+            <p>:</p>
+            <p id="minutes"></p>
+            <p>:</p>
+            <div class="seconds-box">
+              <p id="seconds" class="seconds"></p>
+              <p id="ampm" class="ampm"></p>
+            </div>
+          </div>
+          <div class="alarm" id="alarm-container">
+            <h3>Set Alarm Time</h3>
+            <div class="grid-fluid alarm-items">
+              <label>
+                <div><select id="alarm-hrs"></select></div>
+              </label>
+              <label>
+                <div><select id="alarm-mins"></select></div>
+              </label>
+              <label>
+                <div><select id="alarm-secs"></select></div>
+              </label>
+              <label>
+                <div>
+                  <select id="alarm-ampm">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                  </select>
+                </div>
+              </label>
+            </div>
+            <div class="alarm-buttons" id="button-holder">
+              <button id="set-button" class="set-button">Set Alarm</button>
+              <button id="clear-button" class="clear-button">Clear Alarm</button>
+            </div>
+          </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <p>Made by ABH</p><br>
+        <p>
+        Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
+            href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        </p><br>
+    </div>
+    </footer>
+
+    <script src="bundle.js" type="module"></script>
+  </body>
+
+</html>

@@ -1,0 +1,98 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+
+body
+  display: flex
+  flex-direction: column
+  background: url("../assets/bg.jpg") #f0f0f0
+  background-size: cover
+  background-repeat: no-repeat
+  color: #fff
+  font-size: 16px
+  justify-content: center
+  align-content: center
+  height: 100%
+  // text-align: center
+  overflow-x: hidden
+  h1
+    margin: 20px auto
+    padding: 20px
+    text-align: center
+
+.grid-fluid
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+.wrap
+  flex-grow: 1
+  width: 100%
+  min-width: 400px
+  
+
+.widget
+  width: 70%
+  padding: 20px
+  margin: 2rem auto
+  p
+    display: inline-block
+    line-height: 1em
+
+.date
+  font-family: Oswald, Arial
+  text-align: center
+  font-size: 1.5em
+  margin-bottom: .3125rem
+  background: rgba(0, 0, 0, .5)
+  padding: 20px
+
+.watch
+  font-family: Oswald, Arial
+  padding: 20px
+  font-size: 4em
+  text-align: center
+  margin-bottom: 1rem
+  background: rgba(0, 0, 0, .5)
+
+.watch .seconds-box
+  display: inline-block
+
+.watch .seconds,
+.watch .ampm
+  font-size: .5em
+  display: block
+
+.alarm
+  font-family: Oswald, Arial
+  padding: 20px
+  font-size: 4em
+  text-align: center
+  background: rgba(0, 0, 0, .5)
+
+.alarm-buttons
+  display: flex
+  justify-content: space-between
+  padding: 20px
+
+button
+  border: none
+  padding: 15px 32px
+  text-align: center
+  text-decoration: none
+  font-size: 32px
+  background-color: transparent
+  color: #fff
+  cursor: pointer
+
+.footer
+  flex-shrink: 0
+  margin: .5rem auto
+  padding: 20px
+  bottom: 0
+  width: 70%
+  div
+    text-align: center
+    background: rgba(0, 0, 0, .5)
